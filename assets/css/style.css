@@ -6,6 +6,33 @@
 * License: https://bootstrapmade.com/license/
 */
 
+/*SCOLL BAR
+/* Apply styles to the entire scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar handle */
+  border-radius: 6px; /* Rounded corners of the handle */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+/* Handle on active */
+::-webkit-scrollbar-thumb:active {
+  background: #555;
+}
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -92,7 +119,7 @@ h6 {
 
 #header .logo img {
   max-height: 92px;
-  padding-top:11px;
+  padding-top: 11px;
 }
 
 /*--------------------------------------------------------------
@@ -117,7 +144,7 @@ h6 {
   position: relative;
 }
 
-.navbar>ul>li {
+.navbar > ul > li {
   white-space: nowrap;
   padding: 10px 0 10px 22px;
 }
@@ -145,7 +172,7 @@ h6 {
   margin-left: 5px;
 }
 
-.navbar>ul>li>a:before {
+.navbar > ul > li > a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -159,7 +186,7 @@ h6 {
 }
 
 .navbar a:hover:before,
-.navbar li:hover>a:before,
+.navbar li:hover > a:before,
 .navbar .active:before {
   visibility: visible;
   width: 100%;
@@ -168,7 +195,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: #d6b540;
 }
 
@@ -190,7 +217,7 @@ h6 {
 }
 
 .navbar .getstarted:hover:before,
-.navbar li:hover>.getstarted:before {
+.navbar li:hover > .getstarted:before {
   visibility: hidden;
 }
 
@@ -227,11 +254,11 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul li:hover > a {
   color: #2d678f;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -243,7 +270,7 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -255,7 +282,7 @@ h6 {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
@@ -326,17 +353,17 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
   color: #2d678f;
 }
 
-.navbar-mobile>ul>li {
+.navbar-mobile > ul > li {
   white-space: nowrap;
   padding: 0;
 }
 
 .navbar-mobile a:hover:before,
-.navbar-mobile li:hover>a:before,
+.navbar-mobile li:hover > a:before,
 .navbar-mobile .active:before {
   visibility: hidden;
 }
@@ -374,11 +401,11 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
+.navbar-mobile .dropdown ul li:hover > a {
   color: #2d678f;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
 
@@ -628,6 +655,10 @@ section {
   min-height: 400px;
 }
 
+.about .image:hover {
+  transform: scale(1.1); /* Your zoom-in effect on hover */
+}
+
 @media (max-width: 991px) {
   .about .image {
     text-align: center;
@@ -784,23 +815,28 @@ section {
 
 .services .description {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 19px;
 }
 
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
+.why-us {
+  background-color: #000;
+  color: white;
+}
 .why-us .box {
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.3s;
+  background-color: white;
 }
 
 .why-us .box span {
   display: block;
   font-size: 28px;
   font-weight: 700;
-  color: #8ed851;
+  color: #2d678f;
 }
 
 .why-us .box h4 {
@@ -808,7 +844,7 @@ section {
   font-weight: 600;
   padding: 0;
   margin: 20px 0;
-  color: #2a2a2a;
+  color: #2d678f;
 }
 
 .why-us .box p {
@@ -821,13 +857,50 @@ section {
 .why-us .box:hover {
   background: #2d678f;
   padding: 30px 30px 70px 30px;
-  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+  box-shadow: 10px 15px 30px rgba(98, 96, 96, 0.742);
 }
 
 .why-us .box:hover span,
 .why-us .box:hover h4,
 .why-us .box:hover p {
   color: #fff;
+}
+.why-us .box img {
+  max-width: 100%;
+  height: auto;
+}
+.why-us .section-title h2 {
+  color: #d6b540 !important;
+}
+
+.why-us .icon-box {
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: -38px;
+}
+
+.why-us .icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.5s;
+  color: #2d678f;
+  overflow: hidden;
+  box-shadow: 0px 0 25px rgba(0, 0, 0, 0.15);
+}
+
+.why-us .icon i {
+  font-size: 36px;
+  line-height: 0;
+}
+
+.why-us:hover .icon {
+  box-shadow: 0px 0 25px rgba(92, 159, 36, 0.3);
 }
 
 /*--------------------------------------------------------------
@@ -969,7 +1042,10 @@ section {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -977,7 +1053,10 @@ section {
   border: 1px solid #2d678f;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: #2d678f;
 }
 
@@ -1000,7 +1079,7 @@ section {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -1218,7 +1297,7 @@ section {
   list-style: none;
 }
 
-.faq .faq-list li+li {
+.faq .faq-list li + li {
   margin-top: 15px;
 }
 
@@ -1340,7 +1419,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -1387,7 +1466,7 @@ section {
   border-color: #2d678f;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: #2d678f;
   border: 0;
   padding: 10px 30px 12px 30px;
@@ -1396,7 +1475,7 @@ section {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #6ab82a;
 }
 
@@ -1446,11 +1525,11 @@ section {
   margin: 0;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #444444;
@@ -1582,13 +1661,13 @@ section {
   border-radius: 4px;
 }
 
-#footer .footer-top .footer-newsletter form input[type=email] {
+#footer .footer-top .footer-newsletter form input[type="email"] {
   border: 0;
   padding: 4px;
   width: calc(100% - 110px);
 }
 
-#footer .footer-top .footer-newsletter form input[type=submit] {
+#footer .footer-top .footer-newsletter form input[type="submit"] {
   position: absolute;
   top: 0;
   right: -2px;
@@ -1603,7 +1682,7 @@ section {
   border-radius: 0 4px 4px 0;
 }
 
-#footer .footer-top .footer-newsletter form input[type=submit]:hover {
+#footer .footer-top .footer-newsletter form input[type="submit"]:hover {
   background: #6ab82a;
 }
 
@@ -1629,14 +1708,13 @@ section {
 #whatsapp-button img {
   width: 60px; /* Adjust the width as needed */
   height: auto; /* Maintain the aspect ratio */
- 
 }
 #whatsapp-button:hover::after {
   content: "Contact Us";
   position: absolute;
   bottom: 5px;
   right: 60px;
-  background-color: #25D366; /* Adjust color as needed */
+  background-color: #25d366; /* Adjust color as needed */
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
@@ -1648,4 +1726,68 @@ section {
 
 #whatsapp-button:hover::after {
   opacity: 1;
+}
+
+.about_subHead {
+  color: #2d678f;
+  /* font-size: -webkit-xxx-large; */
+  font-style: normal;
+  font-family: fantasy;
+}
+
+.about_sec {
+  font-family: "Arial", sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: justify;
+  padding: 20px;
+  background-color: #fefdfd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*WHY US TABS
+*/
+.button-container {
+  margin-bottom: 20px;
+}
+.button-container button {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px 12px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  animation-delay: 0.8s;
+  text-transform: uppercase;
+  border: 2px solid #2d678f;
+  background: #2d678f;
+  font-size: x-large;
+  font-weight: 900;
+  border-radius: 26px;
+  transition: all ease-in-out 0.3s;
+}
+
+.button-container button:hover {
+  background: #0b0b0a;
+  border-color: #0b0b0a;
+  color: #d6b540;
+}
+
+.button-container .active {
+  background: #0b0b0a;
+  border-color: #0b0b0a;
+  color: #d6b540;
+}
+
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
 }
