@@ -204,55 +204,67 @@
     }
   });
 
-  document.addEventListener("DOMContentLoaded", function () {
-    var animationElements = [
-        { id: "about_sec_image", animation: "fadeInLeft", delay: 2 },
-        { id: "about_sec_dec", animation: "fadeInRight", delay: 2 },
-    ];
-
-    function isElementInViewport(el) {
-        var rect = el.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.screen.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
-
-    function handleScroll() {
-        animationElements.forEach(function (elInfo) {
-            var el = document.getElementById(elInfo.id);
-            if(isElementInViewport(el))
-            console.log("inside");
-            if (isElementInViewport(el) && !el.classList.contains("animate__animated")) {
- 
-                    el.style.opacity = "1";
-                    el.style.visibility = "visible";
-                    el.style.setProperty('--animate-duration', elInfo.delay+'s');
-                    el.classList.add("animate__animated", "animate__" + elInfo.animation);
-  
-            }
-        });
-
-        // Remove the scroll event listener if all elements have been animated
-        if (animationElements.every(function (elInfo) {
-            return document.getElementById(elInfo.id).classList.contains("animate__animated");
-        })) {
-            window.removeEventListener("scroll", handleScroll);
-        }
-    }
-
-    // Initially hide the elements
-    animationElements.forEach(function (elInfo) {
-        var el = document.getElementById(elInfo.id);
-        el.style.opacity = "0";
-        el.style.visibility = "hidden";
+    /**
+   * Animation on scroll
+   */
+    window.addEventListener('load', () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease-in-out",
+        once: true,
+        mirror: false
+      });
     });
 
-    window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Check on initial load
-});
+//   document.addEventListener("DOMContentLoaded", function () {
+//     var animationElements = [
+//         { id: "about_sec_image", animation: "fadeInLeft", delay: 2 },
+//         { id: "about_sec_dec", animation: "fadeInRight", delay: 2 },
+//     ];
+
+//     function isElementInViewport(el) {
+//         var rect = el.getBoundingClientRect();
+//         return (
+//             rect.top >= 0 &&
+//             rect.left >= 0 &&
+//             rect.bottom <= (window.screen.innerHeight || document.documentElement.clientHeight) &&
+//             rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//         );
+//     }
+
+//     function handleScroll() {
+//         animationElements.forEach(function (elInfo) {
+//             var el = document.getElementById(elInfo.id);
+//             if(isElementInViewport(el))
+//             console.log("inside");
+//             if (isElementInViewport(el) && !el.classList.contains("animate__animated")) {
+ 
+//                     el.style.opacity = "1";
+//                     el.style.visibility = "visible";
+//                     el.style.setProperty('--animate-duration', elInfo.delay+'s');
+//                     el.classList.add("animate__animated", "animate__" + elInfo.animation);
+  
+//             }
+//         });
+
+//         // Remove the scroll event listener if all elements have been animated
+//         if (animationElements.every(function (elInfo) {
+//             return document.getElementById(elInfo.id).classList.contains("animate__animated");
+//         })) {
+//             window.removeEventListener("scroll", handleScroll);
+//         }
+//     }
+
+//     // Initially hide the elements
+//     animationElements.forEach(function (elInfo) {
+//         var el = document.getElementById(elInfo.id);
+//         el.style.opacity = "0";
+//         el.style.visibility = "hidden";
+//     });
+
+//     window.addEventListener("scroll", handleScroll);
+//     handleScroll(); // Check on initial load
+// });
 
   /**
    * Initiate Pure Counter 
