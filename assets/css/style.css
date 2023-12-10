@@ -97,7 +97,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.9);
   transition: all 0.5s;
   z-index: 997;
   height: 80px;
@@ -561,9 +561,9 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #6ab82a;
-  border-color: #6ab82a;
-  color: #fff;
+  background: black;
+  border-color: #ffc451;
+  color: #ffc451;
 }
 
 @media (max-width: 768px) {
@@ -898,7 +898,8 @@ section {
 
 .why-us .box:hover span,
 .why-us .box:hover h4,
-.why-us .box:hover p {
+.why-us .box:hover p,
+.why-us .box:hover .service_link {
   color: #fff;
 }
 .why-us .box img {
@@ -938,7 +939,23 @@ section {
 .why-us:hover .icon {
   box-shadow: 0px 0 25px rgba(92, 159, 36, 0.3);
 }
+.why-us .service_link {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #3498db; /* Choose your desired background color */
+  color: #fff; /* Choose your desired text color */
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
 
+.arrow_icon {
+  margin-left: 10px;
+  transition: transform 0.3s ease; /* Smooth transition for arrow rotation on hover */
+}
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -982,7 +999,8 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(42, 42, 42, 0.7);
+  /* background: rgba(42, 42, 42, 0.7); */
+  background: #000;
 }
 
 .portfolio .portfolio-wrap::before {
@@ -1828,12 +1846,36 @@ section {
   display: block;
 }
 
+.connect {
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/contact_us_bg.jpg) fixed center center;
+  background-size: cover;
+  padding: 60px 0;
+  color: white;
+}
+
 .cta {
   background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img/slide/slide-2.jpg) fixed center center;
   background-size: cover;
   padding: 60px 0;
   color: white;
+}
+.visit-sec .description {
+  line-height: 1.9;
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  color: #000000;
+  margin-top: 6%;
+}
+
+.studydesc {
+  line-height: 1.9;
+  font-size: 18px;
+  font-style: italic;
+  color: #000000;
+  margin-top: 6%;
 }
 
 .sec-banner .description {
@@ -1959,4 +2001,54 @@ section {
   .testimonials .testimonial-item p {
     width: 80%;
   }
+}
+
+.work .box {
+  padding: 50px 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.3s;
+}
+
+.work .box span {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #2d678f;
+}
+
+.work .box h4 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 20px 0;
+  color: #2a2a2a;
+}
+
+.work .box p {
+  color: #aaaaaa;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.work .box:hover {
+  background: #2d678f;
+  padding: 30px 30px 70px 30px;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+.work .box:hover span,
+.work .box:hover h4,
+.work .box:hover p {
+  color: #fff;
+}
+
+.countryset {
+  background-color: #000;
+  color: white;
+  margin-top: 2%;
+}
+
+.study_sec img {
+  width: 100%;
 }
