@@ -1673,7 +1673,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #8ed851;
+  color: #ffc451;
   font-size: 18px;
   line-height: 1;
 }
@@ -1696,7 +1696,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #81d33d;
+  color: #ffc451;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -1729,7 +1729,7 @@ section {
 }
 
 #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
-  background: #6ab82a;
+  background: black;
 }
 
 #footer .copyright {
