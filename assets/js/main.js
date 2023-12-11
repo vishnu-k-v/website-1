@@ -232,7 +232,9 @@
   });
 
   // Add custom transition using JavaScript
-  var whyUsBoxes = document.querySelectorAll(".why-us .box, .about .image");
+  var whyUsBoxes = document.querySelectorAll(
+    ".why-us .box, .about .image,.pr_sec .box"
+  );
 
   whyUsBoxes.forEach(function (element) {
     element.addEventListener("mouseover", function () {

@@ -1339,19 +1339,26 @@ section {
 }
 
 .faq .faq-list ul {
+}
+
+.faq .listul {
   padding: 0;
   list-style: none;
 }
 
 .faq .faq-list li + li {
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 
 .faq .faq-list li {
+}
+
+.faq .list {
   padding: 20px;
   background: #fff;
   border-radius: 4px;
   position: relative;
+  margin-top: 15px;
 }
 
 .faq .faq-list a {
@@ -2043,4 +2050,151 @@ section {
 
 .study_sec img {
   width: 100%;
+}
+
+/* PR */
+.pr_sec {
+  /* background-color: #000;
+  color: white; */
+}
+.pr_sec .box {
+  padding: 13px 14px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.3s;
+  background-color: white;
+  text-align: center;
+}
+
+.pr_sec .box span {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #2d678f;
+}
+
+.pr_sec .box h4 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 20px 0;
+  color: #2d678f;
+}
+
+.pr_sec .box p {
+  color: #aaaaaa;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.pr_sec .box:hover {
+  background: #2d678f;
+  padding: 18px 16px 25px 16px;
+  box-shadow: 10px 15px 30px rgba(98, 96, 96, 0.742);
+}
+
+.pr_sec .box:hover span,
+.pr_sec .box:hover h4,
+.pr_sec .box:hover p,
+.pr_sec .box:hover .service_link {
+  color: #fff;
+}
+.pr_sec .box img {
+  max-width: 100%;
+  height: 108px;
+  width: 100%;
+  object-fit: cover;
+}
+.pr_sec .section-title h2 {
+  color: #d6b540 !important;
+}
+
+.pr_sec .icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.5s;
+  color: #2d678f;
+  overflow: hidden;
+  box-shadow: 0px 0 25px rgba(0, 0, 0, 0.15);
+}
+
+.pr_sec .icon i {
+  font-size: 36px;
+  line-height: 0;
+}
+
+.pr_sec:hover .icon {
+  box-shadow: 0px 0 25px rgba(92, 159, 36, 0.3);
+}
+.pr_sec .service_link {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #3498db; /* Choose your desired background color */
+  color: #fff; /* Choose your desired text color */
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.pr_sec .description {
+  line-height: 1.9;
+  font-size: 18px;
+  font-style: italic;
+  color: #000000;
+}
+.pr_sec .icon-box {
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: -38px;
+}
+
+.pr_sec .rounded-image {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0px 0 25px rgba(0, 0, 0, 0.15);
+  display: inline-block; /* Add this to center align */
+}
+
+.pr_sec .rounded-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block; /* Add this for proper center alignment */
+  margin: auto; /* Add this for proper center alignment */
+}
+
+/* Style for the bullets container */
+.bullets {
+  list-style-type: disc; /* Bullet style */
+  padding-left: 20px; /* Add space to the left of the bullets */
+}
+
+/* Style for individual list items */
+.bullets li {
+  font-size: 16px; /* Adjust the font size as needed */
+  line-height: 1.6; /* Adjust the line height as needed */
+  margin-bottom: 15px; /* Adjust the space between list items */
+}
+
+/* Additional styles for emphasis or customization */
+.bullets li strong {
+  color: #2d678f; /* Customize the color of strong text if needed */
+  font-weight: bold;
+}
+
+.bullets li em {
+  font-style: italic;
+  color: #555; /* Customize the color of italicized text if needed */
 }
