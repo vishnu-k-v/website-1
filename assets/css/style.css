@@ -1786,7 +1786,7 @@ section {
   color: #2d678f;
   /* font-size: -webkit-xxx-large; */
   font-style: normal;
-  font-family: fantasy;
+  font-family: fantasy, sans-serif;
 }
 
 .about_sec {
