@@ -76,7 +76,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #6fc02c;
+  background: #d6b540;
   color: #fff;
 }
 
@@ -2204,4 +2204,126 @@ section {
 .bullets li em {
   font-style: italic;
   color: #555; /* Customize the color of italicized text if needed */
+}
+
+.visit-sec {
+  /* background-color: #000;
+  color: white; */
+}
+.visit-sec .box {
+  padding: 13px 14px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.3s;
+  background-color: white;
+  text-align: center;
+}
+
+.visit-sec .box span {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #2d678f;
+}
+
+.visit-sec .box h4 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 20px 0;
+  color: #2d678f;
+}
+
+.visit-sec .box p {
+  color: #aaaaaa;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.visit-sec .box:hover {
+  background: #2d678f;
+  padding: 18px 16px 25px 16px;
+  box-shadow: 10px 15px 30px rgba(98, 96, 96, 0.742);
+}
+
+.visit-sec .box:hover span,
+.visit-sec .box:hover h4,
+.visit-sec .box:hover p,
+.visit-sec .box:hover .service_link {
+  color: #fff;
+}
+.visit-sec .box img {
+  max-width: 100%;
+  height: 108px;
+  width: 100%;
+  object-fit: cover;
+}
+.visit-sec .section-title h2 {
+  color: #d6b540 !important;
+}
+
+.visit-sec .icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.5s;
+  color: #2d678f;
+  overflow: hidden;
+  box-shadow: 0px 0 25px rgba(0, 0, 0, 0.15);
+}
+
+.visit-sec .icon i {
+  font-size: 36px;
+  line-height: 0;
+}
+
+.visit-sec:hover .icon {
+  box-shadow: 0px 0 25px rgba(92, 159, 36, 0.3);
+}
+.visit-sec .service_link {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #3498db; /* Choose your desired background color */
+  color: #fff; /* Choose your desired text color */
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.visit-sec .description {
+  line-height: 1.9;
+  font-size: 18px;
+  font-style: italic;
+  color: #000000;
+}
+.visit-sec .icon-box {
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: -38px;
+}
+
+.visit-sec .rounded-image {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0px 0 25px rgba(0, 0, 0, 0.15);
+  display: inline-block; /* Add this to center align */
+}
+
+.visit-sec .rounded-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block; /* Add this for proper center alignment */
+  margin: auto; /* Add this for proper center alignment */
 }
