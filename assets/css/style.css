@@ -728,9 +728,9 @@ section {
 }
 
 .clients2 .swiper-slide img {
-  opacity: 0.5;
+  /* opacity: 0.5; */
   transition: 0.3s;
-  filter: grayscale(100);
+  /* filter: grayscale(100); */
 }
 
 .clients2 .swiper-slide img:hover {
@@ -768,7 +768,7 @@ section {
   transition: all 0.4s ease-in-out;
   display: inline-block;
   padding: 15px 0;
-  filter: grayscale(100);
+  /* filter: grayscale(100); */
 }
 
 .clients img:hover {
